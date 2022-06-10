@@ -46,8 +46,8 @@
 $(document).ready(function() {
     var confirm = function() {
         bootbox.confirm({
-            title: "Appointment Confirmation",
-            message: "Do you really want to schedule this appointment?",
+            title: "Request Confirmation",
+            message: "Do you really want to Confirm this Request for Chequebook?",
             buttons: {
                 cancel: {
                     label: '<i class="fa fa-times"></i> Cancel'
@@ -60,7 +60,7 @@ $(document).ready(function() {
                 if (result == true) {
                     $('#appointmentForm').submit();
                 } else {
-                    console.log("Scheduling cancelled.");
+                    console.log("Request cancelled.");
                 }
             }
         });
