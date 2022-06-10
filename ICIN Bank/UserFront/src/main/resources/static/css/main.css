@@ -3,7 +3,7 @@ body {
 }
 
 html {
-	background: url("/images/bg.png") no-repeat center center fixed;
+	background: url("/images/bg.jpg") no-repeat center center fixed;
 	-webkit-background-size: cover;
 	-moz-background-size: cover;
 	-o-background-size: cover;
@@ -162,7 +162,7 @@ html {
 }
 
 .main-center {
-	margin-top: 30px;
+	margin-top: 5px;
 	margin: 0 auto;
 	max-width: 330px;
 	padding: 40px 40px;
@@ -253,7 +253,7 @@ html {
 body {
 	padding: 0 2em;
 	font-family: Arial, sans-serif;
-	color: #024457;
+	color: #23132a;
 	/*background: #f2f2f2;*/
 }
 
