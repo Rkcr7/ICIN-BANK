@@ -1,9 +1,8 @@
 package com.userfront.domain;
 
-import java.util.Collection;
-import java.util.HashSet;
+
 import java.util.List;
-import java.util.Set;
+
 
 import javax.persistence.CascadeType;
 import javax.persistence.Column;
@@ -15,15 +14,12 @@ import javax.persistence.Id;
 import javax.persistence.OneToMany;
 import javax.persistence.OneToOne;
 
-import org.springframework.security.core.GrantedAuthority;
-import org.springframework.security.core.userdetails.UserDetails;
-
 import com.fasterxml.jackson.annotation.JsonIgnore;
-import com.userfront.domain.security.Authority;
-import com.userfront.domain.security.UserRole;
+
+
 
 @Entity
-public class User implements UserDetails{
+public class User  {
 
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
@@ -53,17 +49,7 @@ public class User implements UserDetails{
     @OneToMany(mappedBy = "user", cascade = CascadeType.ALL, fetch = FetchType.LAZY)
     private List<Recipient> recipientList;
 
-    @OneToMany(mappedBy = "user", cascade = CascadeType.ALL, fetch = FetchType.EAGER)
-    @JsonIgnore
-    private Set<UserRole> userRoles = new HashSet<>();
-
-    public Set<UserRole> getUserRoles() {
-        return userRoles;
-    }
-
-    public void setUserRoles(Set<UserRole> userRoles) {
-        this.userRoles = userRoles;
-    }
+  
 
     public Long getUserId() {
         return userId;
