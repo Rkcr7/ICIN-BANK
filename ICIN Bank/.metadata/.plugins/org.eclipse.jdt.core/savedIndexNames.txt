@@ -61,4 +61,3 @@ INDEX VERSION 1.131+C:\capstone project\ICIN Bank\.metadata\.plugins\org.eclipse
 1467544443.index
 963320508.index
 2405532013.index
-1019537821.index
