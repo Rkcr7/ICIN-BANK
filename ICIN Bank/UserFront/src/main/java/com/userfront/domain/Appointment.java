@@ -16,7 +16,7 @@ public class Appointment {
     @GeneratedValue(strategy = GenerationType.AUTO)
     private Long id;
     private Date date;
-    private String location;
+    private String account_type;
     private String description;
     private boolean confirmed;
 
@@ -40,12 +40,12 @@ public class Appointment {
         this.date = date;
     }
 
-    public String getLocation() {
-        return location;
+    public String getAccount_type() {
+        return account_type;
     }
 
-    public void setLocation(String location) {
-        this.location = location;
+    public void setAccount_type(String account_type) {
+        this.account_type = account_type;
     }
 
     public String getDescription() {
@@ -77,7 +77,7 @@ public class Appointment {
         return "Appointment{" +
                 "id=" + id +
                 ", date=" + date +
-                ", location='" + location + '\'' +
+                ", account_type='" + account_type + '\'' +
                 ", description='" + description + '\'' +
                 ", user=" + user +
                 '}';
